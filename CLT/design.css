@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "Pusab";
+    src: url("fonts/PUSAB__.otf") format("truetype");
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before {
+    content:"";
+    position: fixed;
+    inset:0;
+    background-image: url(https://media.discordapp.net/attachments/1571271768747016264/1572624562858889249/lv_0_20261118100618.jpg?ex=6aff0c41&is=6afdbac1&hm=3ee84a6687e263ba1f8278d1a4ce88ad2ca48150cf5678eb6220bdce8dadc591&format=webp&width=519&height=640);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(50px)
+}
+
+.janela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;         
+    top: 50%;               
+    left: 50%;              
+    transform: translate(-50%, -50%);  
+    width: 90vw;           
+    height: 90vh; 
+    max-width: 100%;
+    max-height: 100%;         
+    background-color: #303030; 
+    z-index: 10000;         
+    border-radius: 5px;     
+    box-shadow: 0 0 10px rgb(0, 0, 0); 
+}
+
+.janela2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 85vw;
+    height: 85vh;
+    background-color: #505050;
+    border-radius: 5px;
+}
+
+.texto {
+    font-family: "pusab";
+    font-size: min(9vw, 12vh);
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 20px #ffffff;
+    margin: 0;
+}
+
+.texto2 {
+    font-family: "pusab";
+    font-size: min(9vw, 4vh);
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    margin: 0;
+    padding-bottom: 15vh;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.botao {
+    font-family: "pusab";
+    font-size: min(9vw, 7vh);
+    text-align: center;
+    width: max-content;
+    height: 15vh;
+    background-color: #303030;
+    border-width: 0;
+    border-radius: 10px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    margin: 0;
+}
